@@ -1,0 +1,151 @@
+/* ============================================================
+   PortfolioHub — Eduardo da Cunha Conti
+   Folha de estilos do site (GitHub Pages)
+   ============================================================ */
+
+:root {
+  --bg: #0b1220;
+  --superficie: #121b30;
+  --superficie-2: #18233d;
+  --borda: #243252;
+  --texto: #e6ecf8;
+  --suave: #9fb0cf;
+  --destaque: #38bdf8;
+  --destaque-2: #818cf8;
+  --raio: 14px;
+  --largura: 1040px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+a { color: var(--destaque); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, .botao:focus-visible {
+  outline: 3px solid var(--destaque-2);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ---------- Cabeçalho ---------- */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 14px max(20px, calc((100% - var(--largura)) / 2));
+  background: rgba(11, 18, 32, 0.92);
+  border-bottom: 1px solid var(--borda);
+  backdrop-filter: blur(8px);
+}
+
+.marca { font-weight: 800; font-size: 1.15rem; color: var(--texto); letter-spacing: 0.5px; }
+.marca span { color: var(--destaque); }
+.marca:hover { text-decoration: none; }
+
+.topo nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.topo nav a { color: var(--suave); font-size: 0.95rem; }
+.topo nav a:hover { color: var(--texto); text-decoration: none; }
+
+/* ---------- Estrutura geral ---------- */
+main, footer { max-width: var(--largura); margin: 0 auto; padding: 0 20px; }
+
+section { padding: 56px 0 8px; scroll-margin-top: 80px; }
+
+h1, h2, h3 { line-height: 1.2; margin: 0 0 14px; }
+h2 { font-size: 1.7rem; }
+h2::before { content: "// "; color: var(--destaque); font-weight: 400; }
+h3 { font-size: 1.1rem; }
+
+.muted, .em-breve { color: var(--suave); }
+
+/* ---------- Hero ---------- */
+.hero { padding: 80px 0 24px; }
+.eyebrow { color: var(--destaque); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 0.8rem; margin: 0 0 12px; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+.lead { font-size: 1.2rem; color: var(--suave); max-width: 720px; }
+.lead strong { color: var(--texto); }
+.acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+.botao {
+  display: inline-block;
+  padding: 11px 22px;
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  color: var(--texto);
+  font-weight: 600;
+  background: var(--superficie);
+}
+.botao:hover { text-decoration: none; border-color: var(--destaque); }
+.botao.primario { background: var(--destaque); border-color: var(--destaque); color: #04121f; }
+.botao.primario:hover { filter: brightness(1.08); }
+
+/* ---------- Cartões e grades ---------- */
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 20px; }
+.grade.quatro { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.cartao:hover { transform: translateY(-3px); border-color: var(--destaque); }
+.cartao p { margin: 0; color: var(--suave); font-size: 0.97rem; }
+.cartao .rotulo { color: var(--suave); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+.cartao .valor { font-size: 1.05rem; font-weight: 700; color: var(--texto); overflow-wrap: anywhere; }
+
+.selo {
+  align-self: flex-start;
+  padding: 3px 11px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--superficie-2);
+  color: var(--destaque);
+  border: 1px solid var(--borda);
+}
+.selo.pessoal { color: #a5b4fc; }
+.selo.curso { color: #86efac; }
+
+.tags { font-size: 0.85rem; color: var(--destaque-2); }
+.links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: auto; padding-top: 10px; font-size: 0.92rem; font-weight: 600; }
+
+/* ---------- Tecnologias ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 20px 0 0; list-style: none; }
+.chips li {
+  padding: 6px 14px;
+  background: var(--superficie-2);
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Vídeo ---------- */
+.video { position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: 20px; border-radius: var(--raio); overflow: hidden; border: 1px solid var(--borda); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- Rodapé ---------- */
+footer { margin-top: 64px; padding-top: 24px; padding-bottom: 40px; border-top: 1px solid var(--borda); color: var(--suave); font-size: 0.9rem; }
+
+@media (max-width: 560px) {
+  section { padding-top: 40px; }
+  .hero { padding-top: 48px; }
+}
