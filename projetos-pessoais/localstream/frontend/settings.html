@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings — LocalStream</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/settings.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="navbar__logo">LocalStream</span>
+        <div class="navbar__actions">
+            <button class="theme-toggle" id="themeToggle" title="Change mode">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container page">
+        <div class="settings-card">
+
+            <div class="settings-card__header">
+                <h1 class="settings-card__title">Configure Media Directory</h1>
+                <p class="settings-card__subtitle text-secondary">
+                    Enter the path of the folder where your video files are located.
+                    LocalStream will automatically index all found files.
+                </p>
+            </div>
+
+            <div class="settings-card__body">
+                <label class="settings-label" for="directoryInput">
+                    Folder path
+                </label>
+                <input
+                    class="input"
+                    type="text"
+                    id="directoryInput"
+                    placeholder="Ex: C:\Users\Você\Videos"
+                />
+                <div id="feedbackMessage"></div>
+            </div>
+
+            <div class="settings-card__footer">
+                <button class="btn btn--primary" id="saveBtn">
+                    Save and scan
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="/static/js/settings.js"></script>
+
+</body>
+</html>
