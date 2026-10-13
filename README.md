@@ -61,6 +61,7 @@ cd PortfolioHub
 |---|---|
 | v1.0.0 | Site base no GitHub Pages e estrutura do repositório |
 | v1.1.0 | Pastas dos projetos, índice no README e seção de projetos no site |
+| v1.1.1 | Ajuste do site: remoção da seção de vídeo |
 
 ## 👤 Autor
 
