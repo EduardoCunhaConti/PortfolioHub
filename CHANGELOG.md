@@ -3,6 +3,11 @@
 Todas as mudanças relevantes deste projeto são registradas aqui.
 O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o versionamento segue o [SemVer](https://semver.org/lang/pt-BR/).
 
+## [1.1.1] — Ajuste do site
+
+### Removido
+- Seção "Apresentação em vídeo" do site, que não será utilizada.
+
 ## [1.1.0] — Projetos no portfólio
 
 ### Adicionado
