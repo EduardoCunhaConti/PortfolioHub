@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Conti — Portfólio de Dados</title>
   <meta name="description" content="Portfólio de Eduardo da Cunha Conti: projetos de Engenharia de Dados, Ciência de Dados, Machine Learning e desenvolvimento em Python.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eduardo Conti — Portfólio de Dados">
+  <meta property="og:description" content="Projetos de Engenharia de Dados, Ciência de Dados e Machine Learning.">
+  <meta property="og:url" content="https://eduardocunhaconti.github.io/PortfolioHub/">
+  <meta property="og:locale" content="pt_BR">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <link rel="stylesheet" href="style.css">
@@ -16,6 +21,7 @@
     <nav aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
+      <a href="#github">GitHub</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -141,6 +147,20 @@
       </div>
     </section>
 
+    <section id="github">
+      <h2>GitHub ao vivo</h2>
+      <p class="muted">Dados lidos em tempo real da API pública do GitHub: projetos armazenados, atividade recente do hub e contribuidores do repositório.</p>
+
+      <h3 class="sub-titulo">Projetos armazenados</h3>
+      <div class="grade" id="gh-repos"><p class="muted">Carregando…</p></div>
+
+      <h3 class="sub-titulo">Atividade recente do hub</h3>
+      <ul class="lista-gh" id="gh-commits"><li class="muted">Carregando…</li></ul>
+
+      <h3 class="sub-titulo">Contribuidores</h3>
+      <div class="equipe" id="gh-contribuidores"><p class="muted">Carregando…</p></div>
+    </section>
+
     <section id="contato">
       <h2>Contato</h2>
       <div class="grade">
@@ -164,6 +184,8 @@
   <footer>
     <p>© 2026 Eduardo da Cunha Conti · Feito com HTML e CSS · Hospedado no GitHub Pages</p>
   </footer>
+
+  <script src="github-api.js" defer></script>
 
 </body>
 </html>
