@@ -62,6 +62,15 @@ cd PortfolioHub
 | v1.0.0 | Site base no GitHub Pages e estrutura do repositório |
 | v1.1.0 | Pastas dos projetos, índice no README e seção de projetos no site |
 | v1.1.1 | Ajuste do site: remoção da seção de vídeo |
+| v2.0.0 | Implantação: segurança, colaboração, integração com a API do GitHub e CI |
+
+## 🔐 Segurança e colaboração
+
+- Política de segurança: [SECURITY.md](SECURITY.md)
+- Guia de contribuição e papéis: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Verificação automática: workflow `verificar-site`, executado em cada Pull Request
+- Documentação da implantação (Google Docs): [abrir](https://docs.google.com/document/d/1l4gogzrnaK8E0jlDdsFG4ih7mT6f-_4n_Uxzi1m3FTc/edit?usp=sharing)
+- Plano de implantação (Google Docs): [abrir](https://docs.google.com/document/d/17FLYRf2UvzHdnbORiiaztVH28InJcZQ94vXXsNcn0Hk/edit?usp=sharing)
 
 ## 👤 Autor
 
