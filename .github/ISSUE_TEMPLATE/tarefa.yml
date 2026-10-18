@@ -1,0 +1,31 @@
+name: Tarefa de implantação
+description: Registrar uma tarefa do plano de implantação do PortfolioHub
+title: "[Tarefa] "
+labels: ["implantação"]
+body:
+  - type: dropdown
+    id: fase
+    attributes:
+      label: Fase do plano
+      options:
+        - 1. Planejamento
+        - 2. Integração com o GitHub
+        - 3. Usuários e segurança
+        - 4. Compartilhamento e colaboração
+        - 5. Testes e lançamento
+        - 6. Apresentação
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que precisa ser feito e por quê.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: Como saber que a tarefa está concluída.
+      placeholder: "- [ ] ..."
