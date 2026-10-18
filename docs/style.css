@@ -149,3 +149,13 @@ footer { margin-top: 64px; padding-top: 24px; padding-bottom: 40px; border-top: 
   section { padding-top: 40px; }
   .hero { padding-top: 48px; }
 }
+
+/* ---------- GitHub ao vivo ---------- */
+.sub-titulo { margin: 28px 0 0; font-size: 1.05rem; color: var(--suave); }
+.lista-gh { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 10px; }
+.lista-gh li { padding: 12px 16px; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); }
+.lista-gh .meta { display: block; color: var(--suave); font-size: 0.85rem; }
+.equipe { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+.membro { display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; background: var(--superficie); border: 1px solid var(--borda); border-radius: 999px; color: var(--texto); }
+.membro:hover { text-decoration: none; border-color: var(--destaque); }
+.membro img { width: 36px; height: 36px; border-radius: 50%; }
